@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #F5F4F5;
+    font-family: 'Quicksand', sans-serif;
+}
+.container-main{
+    max-width: 600px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-form-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-form-logo h1{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: #53575A;
+}
+.container-logo{
+    display: flex;
+    justify-content: center;
+}
+.container-logo-login{
+    width: 400px;
+    height: 340px;
+}
+.container-form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-login{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.container-login-input{
+    background-color: #fff;
+    border: 1px solid #DFE0E0;
+    padding: 13px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.container-login-input::placeholder {
+    color: rgb(83, 87, 90, 0.5);
+    font-family: 'Quicksand', sans-serif;
+}
+.container-login-input:focus {
+    border: 1px solid #B7151B;
+    box-shadow: 0 0 10px -4px #B7151B;
+}
+.container-login form{
+    display: flex;
+    flex-direction: column;
+}
+.button-login{
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.95);
+    background-color: #B7151B;
+    margin-bottom: 15px;
+}
+.button-login:hover{
+    cursor: pointer;
+    background-color: rgb(183, 21, 27, 0.8);
+}
+.button-login:focus {
+    border: 1px solid #B7151B;
+    box-shadow: 0 0 10px -4px #B7151B;
+}
+.container-login-text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container-login-text span a{
+    text-decoration: none;
+    color: #53575A;
+    position: relative;
+}
+.sign-up a:hover:before{
+    width: 110%;
+}
+.sign-up a:before{
+    content: "";
+    background: red;
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    transition: .3s all;
+    bottom: -3px;
+}
+
+.forgot-password a:hover:before{
+    width: 100%;
+}
+.forgot-password a:before{
+    content: "";
+    background: red;
+    height: 2px;
+    width: 0px;
+    right: 0px;
+    position: absolute;
+    transition: .3s all;
+    bottom: -3px;
+}

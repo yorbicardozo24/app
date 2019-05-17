@@ -1,0 +1,74 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+.container-header{
+    background: #031F2C;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+}
+.container-header-options{
+    width: 100%;
+    margin-right: 30px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.greeting-user{
+    text-align: center;
+    color: white;
+    margin-right: 15px;
+}
+.logo-user {
+    height: 56px;
+}
+.logo-user img{
+    width: 30px;
+    height: 28px;
+    border-radius: 30px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+#navigation-hide{
+    display: none;
+}
+#navigation-show{
+    display: block;
+}
+.options-ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.options-ul-dos{
+    display: none;
+}
+.options-ul-dos li a{
+    text-decoration: none;
+    color: white;
+}
+.options-ul-dos li{
+    border-bottom: 1px solid #031F2C;
+    text-align: center;
+    padding: 5px;
+}
+
+.logo-user img:hover{
+    cursor: pointer;
+}
+.logo-user:hover ul{
+    display: block;
+    width: 120px;
+    right: 0px;
+    list-style: none;
+    position: absolute;
+    color: white;
+    background: #1c3541;
+}
+.options-ul-dos li:hover{
+    cursor: pointer;
+    background: rgb(3,31,44, 0.2);
+}
