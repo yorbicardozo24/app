@@ -14,8 +14,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(230, 230, 230, 0.2);
+    transition: all .2s;
+    list-style: none;
 }
 .menuh ul li:hover{
     background: rgb(230, 230, 230, 0.2);
     cursor: pointer;
+    transition: all .4s;
+    margin-left: 1em;
 }
