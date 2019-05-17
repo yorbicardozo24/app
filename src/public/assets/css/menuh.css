@@ -1,0 +1,21 @@
+.menuh{
+    background: #031F2C;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 56px;
+}
+.logo img{
+    width: 200px;
+}
+.menuh ul li{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(230, 230, 230, 0.2);
+}
+.menuh ul li:hover{
+    background: rgb(230, 230, 230, 0.2);
+    cursor: pointer;
+}
