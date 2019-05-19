@@ -22,6 +22,10 @@ class Header extends Component{
         }
     }
 
+    salir = () =>{
+        alert('hola mundo');
+    }
+
     render(){
         return(
             <header className="header">

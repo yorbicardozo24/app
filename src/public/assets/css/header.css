@@ -28,10 +28,10 @@ header{
 }
 .logo-user img{
     width: 30px;
-    height: 28px;
+    height: 30px;
     border-radius: 30px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 #navigation-hide{
     display: none;
@@ -63,6 +63,7 @@ header{
     display: block;
     width: 120px;
     right: 0px;
+    top: 56px;
     list-style: none;
     position: absolute;
     color: white;

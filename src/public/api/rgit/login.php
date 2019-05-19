@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-require '../includes/connection.php';
+require '../includes/connection.php'; 
 
     $dataArray = $_POST['data'];
     

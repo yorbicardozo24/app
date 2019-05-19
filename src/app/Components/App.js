@@ -34,20 +34,27 @@ class App extends Component{
                 let urlPhoto = firebase.auth().currentUser.photoURL;
                 let email = firebase.auth().currentUser.email;
                 //Enviamos una peticion a la REST API para saber si el usuario que ingreso por firebase esta en la base de datos
-                // fetch('/api/users/user', {
-                //     method: 'POST',
-                //     body: JSON.stringify({
-                //         username: name
-                //     }),
-                //     headers: {
-                //         'Accept': 'application/json',
-                //         'Content-Type': 'application/json'
-                //     }
-                // })
-                // .then(res => res.json({}))
-                // .then(data => {
-                //     //Si el usuario no esta en la base de datos se guarda
-                //     if(!data.ok){
+                let usuariologin = {
+                    email
+                };
+                let url = "api/rgit/user.php";
+                let jsonString = JSON.stringify(usuariologin);
+                $.ajax({
+                   type: "POST",
+                   url: url,
+                   data: {data : jsonString},
+                   success: function(data)
+                   {
+                    // let dataF = JSON.parse(data);
+                    // if(dataF){
+                    //     console.log(dataF);
+                    // }
+                    if(data){
+                        console.log('para registrar');
+                    }
+                   }
+                 });
+                
                 //         fetch('/api/users/register', {
                 //             method: 'POST',
                 //             body: JSON.stringify({
@@ -73,8 +80,6 @@ class App extends Component{
 
             }
         })
-        
-        
     }
 
     render(){
